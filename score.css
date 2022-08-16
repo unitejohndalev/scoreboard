@@ -1,55 +1,28 @@
 * {
     margin: 0;
-} 
-
-
-
-/* This for the container */
+    padding: 0;
+}
+/* container for the score/btns/players */
 .scoreboard-container {
-    border-style: none;
-    display: inline-block; 
-    width: 50%;
-    height: 25rem;
-    position: relative;
-    margin-top: 7%;
-    left: 25%;
+    border: none;
+    width: 80%;
+    height: 400px;
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
     background-color: rgba(27, 36, 74, 1);
-    display: flex;
-    justify-content: center;
-} 
-.scoreboard-container > button {
-    width: 10vh;
-    position: absolute;
-    left: 44.5%;
-    top: 85%;
-    font-size: 1.2rem;
-    text-align: center;
-}
-button {
-    width: 45px;
-    height: 45px;
-    border:solid 3px #9AABDB;
-    border-radius: 5px;
-    color: #9AABDB;
-    background: rgba(27, 36, 74, 1);
-    margin-left: 5px;
-    cursor: pointer;
+    position: relative;
     
+
 }
 
-.btn-container {
+.homeguest-container {
     border: none;
-    color: yellow;
-    display: inline-block;
-    margin-top: 12%;
-    margin-left: 8%;
-    
-}
- 
- /* changing the fonts of scoreboard/button */
- .scorehome-container > p, button,
- .scoreguest-container > p, button {
-    font-family: 'Cursed Timer ULiL', sans-serif;
+    display: flex;
+    width: 80%;
+    height: 80%;
+    margin: 3% auto;
+    position: relative;
     
 }
 
@@ -57,171 +30,151 @@ button {
 .scoreguest-container {
     border: none;
     display: inline-block;
-    height: 70%;
-    width: 25%;
-    margin-top: 5%;   
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    
 }
 
-.scorehome-container {
-    margin-right: 10%;
-}
-
-.scoreboard-container ul li {
-    border: none;
+li {
+    margin-top: 10%;
     list-style: none;
-    display: inline-block;
-    display: flex;
-    justify-content: center;
-    margin-left: -27%;
-    font-size: 40px;
     font-weight: bold;
     font-family: 'Verdana';
     color: #EEEEEE;
-    padding: 0;
-
-
-
-    
 }
-
-.scorehome-container p,
-.scoreguest-container p {
+/* button section */
+.btn-container {
     border: none;
-    /* display: inline-block; */
-    font-size: 5rem;
     display: flex;
-    justify-content: center;
-    background: #080001;
-    color: rgba(249, 79, 109, 1);
-    margin-top: 10%;
-    border-radius: 5px;
-    padding-top: 10%;
-    
-}
-
-.scorehome-container ul li:nth-child(2) {
-    font-size: 1.5rem;
-    border: none;
-    display: inline-block;
-    width: 150%;
-    text-align: center;
-    margin-left: -40%;
-}
-.scoreguest-container ul li:nth-child(2) {
-    font-size: 1.5rem;
-    border: none;
-    display: inline-block;
-    width: 150%;
-    text-align: center;
-    margin-left: -40%;
-
-}
-.score-home,
-.score-guest {
-    border: none;
-    display: inline-block;
-    margin-left: 9.5%;
-    
-}
-
-
-/* renaming participants name */
-
-.renamehome {
-    border: none;
-    box-shadow: 1px 1px 5px rgba(100, 130, 228, .8) ;
-    display: inline-block;
-    width: 25%;
-    height: 25%;
+    width: 40%;
+    margin-right: auto;
+    margin-left: auto;
     position: absolute;
-    top: 69%;
-    left: 5%;
+    bottom: 0;
 
 }
+.resetbtn {
+    width: 20%;
+    font-size: 1rem;
+    text-align: center;
+    position: absolute;
+    bottom: 2%;
+    left: 40%;
+}
+
+.scorehome-container>p,
+button,
+.scoreguest-container>p,
+button {
+    font-family: 'Cursed Timer ULiL', sans-serif;
+
+}
+
+button {
+    width: 30%;
+    height: 45px;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 3px #9AABDB;
+    border-radius: 5px;
+    color: #9AABDB;
+    background: rgba(27, 36, 74, 1);
+}
+
+/* score section */
+
+#scorehome-ctn,
+#scoreguest-ctn {
+    display: flex;
+    font-family: 'Cursed Timer ULiL', sans-serif;
+    color: rgba(249, 79, 109, 1);
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 5%;
+    font-size: 4rem;
+}
+
+.pcontainer {
+    border: none;
+    font-size: 50px;
+    display: flex;
+    border-radius: 5px;
+    width: 100%;
+    padding-top: 15%;
+    margin-top: 10%;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.9);
+    
+    
+}
+
+/* home/guest Name */
+
+.scorehome-container li:nth-child(1),
+.scoreguest-container li:nth-child(1)
+{
+    text-align: center;
+}
+
+.scorehome-container li:nth-child(2),
+.scoreguest-container li:nth-child(2)
+ {
+    border: none;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    position: relative;
+    margin-top: 10px;
+  
+    
+}
+
+/* input section */
 
 .renamehome input {
-    font-size: 20px;
-    padding: 5%;
+    font-size: 15px;
+    padding: 2%;
     margin-top: 5%;
     margin-left: 5%;
-    width: 80%;
+    width: 50%;
     display: inline-block;
     box-shadow: 1px 1px 5px #8B5CF6;
     text-transform: uppercase;
     border-style: none;
     outline: transparent;
 }
+
 ::placeholder {
-    color: rgba(18, 55, 221, 0.8);
+    color: rgba(18, 55, 221, 0.5);
 }
 
 #renamebtnhome {
-    display: inline-block;
-    position: absolute;
+   height: 3rem;
     width: 5rem;
     left: 67%;
     top: 15%;
-    font-size: large;
+    font-size: medium;
 }
 
 #change-name {
     text-transform: uppercase;
 }
 
-/* btn for choosing colors */
-
-.homechangebtn {
-    border: none;
-    text-align: center;
-    margin-top: 5%;
-}
-.homechangebtn>button:nth-child(1) {
-    background: white;
-}
-.homechangebtn > button:nth-child(2) {
-    background: red;
-}
-
-.homechangebtn > button:nth-child(3) {
-    background: green;
-}
-.homechangebtn > button:nth-child(4) {
-    background: blue;
-}
-.homechangebtn > button:nth-child(5) {
-    background: yellow;
-}
-.homechangebtn > button:nth-child(6) {
-    background: black;
-}
-
-
-
-
 /* renaming guest name */
 
-.renameguest {
-    border: none;
-    box-shadow: 1px 1px 5px rgba(100, 130, 228, .8);
-    display: inline-block;
-    width: 25%;
-    height: 25%;
-    position: absolute;
-    top: 69%;
-    right: 5%;
-
-}
 
 .renameguest input {
-    font-size: 20px;
-    padding: 5%;
+    font-size: 15px;
+    padding: 2%;
     margin-top: 5%;
     margin-left: 5%;
-    width: 80%;
+    width: 50%;
     display: inline-block;
     box-shadow: 1px 1px 5px #8B5CF6;
-    border-style: none;
     text-transform: uppercase;
+    border-style: none;
     outline: transparent;
 
 }
@@ -231,14 +184,56 @@ button {
 }
 
 #renamebtnguest {
-    display: inline-block;
-    position: absolute;
+    height: 3rem;
     width: 5rem;
     left: 67%;
     top: 15%;
-    font-size: large;
+    font-size: medium;
 }
 
 #changeguest-name {
     text-transform: uppercase;
 }
+/* btn for choosing colors */
+
+.homechangebtn > button {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+.homechangebtn {
+    display: inline-block;
+    border: none;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 10%;
+   
+    
+}
+
+.homechangebtn>button:nth-child(1) {
+    background: white;
+}
+
+.homechangebtn>button:nth-child(2) {
+    background: red;
+}
+
+.homechangebtn>button:nth-child(3) {
+    background: green;
+}
+
+.homechangebtn>button:nth-child(4) {
+    background: blue;
+}
+
+.homechangebtn>button:nth-child(5) {
+    background: yellow;
+}
+
+.homechangebtn>button:nth-child(6) {
+    background: black;
+}
+

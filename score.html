@@ -13,13 +13,18 @@
 <body>
    
     <div class="scoreboard-container">
-        <button  onclick="reset()">RESET</button>
-        <div class="scorehome-container">
+    
+      <div class="homeguest-container">
+          <div class="scorehome-container">
         <ul>
             <li>HOME</li>
             <li id="change-name">STI CUBAO</li>
         </ul>
+       
+        <div class="pcontainer">
             <p id="scorehome-ctn">0</p>
+        </div>
+            
           <div class="btn-container">
             <button onclick="btn1()">+1</button>
             <button onclick="btn2()">+2</button>
@@ -30,9 +35,12 @@
         <div class="scoreguest-container">
         <ul>
             <li>GUEST</li>
-            <li id="changeguest-name">STI FAIRVIEW</li>
+            <li id="changeguest-name">STI CUBAO</li>
         </ul>
-            <p id="scoreguest-ctn">0</p>
+           
+         <div class="pcontainer">
+               <p id="scoreguest-ctn">0</p>
+         </div>
          
           <div class="btn-container">
             <button onclick="btn01()">+1</button>
@@ -40,7 +48,9 @@
             <button onclick="btn03()">+3</button>
             </div>
         </div>
-           
+       
+      </div>
+            <button class="resetbtn" onclick="reset()">RESET</button>
     </div>
      <div class="renamehome">
         <input id="inputnamehome-el" type="text" placeholder="INPUT HOME NAME">
@@ -65,7 +75,7 @@
         <button onclick="yellow1()"></button>
         <button onclick="black1()"></button>
     </div> 
-
+ 
     </div>
 
 
