@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball Scoreboard</title>
+    <link rel="stylesheet" href="score.css">
+
+    <!-- Font for scoreboard -->
+    <link href="http://fonts.cdnfonts.com/css/cursed-timer-ulil" rel="stylesheet">
+</head>
+<body>
+   
+    <div class="scoreboard-container">
+        <button  onclick="reset()">RESET</button>
+        <div class="scorehome-container">
+        <ul>
+            <li>HOME</li>
+            <li id="change-name">STI CUBAO</li>
+        </ul>
+            <p id="scorehome-ctn">0</p>
+          <div class="btn-container">
+            <button onclick="btn1()">+1</button>
+            <button onclick="btn2()">+2</button>
+            <button onclick="btn3()">+3</button>
+            </div>
+        </div>   
+
+        <div class="scoreguest-container">
+        <ul>
+            <li>GUEST</li>
+            <li id="changeguest-name">STI CAINTA</li>
+        </ul>
+            <p id="scoreguest-ctn">0</p>
+         
+          <div class="btn-container">
+            <button onclick="btn01()">+1</button>
+            <button onclick="btn02()">+2</button>
+            <button onclick="btn03()">+3</button>
+            </div>
+        </div>
+           
+    </div>
+     <div class="renamehome">
+        <input id="inputnamehome-el" type="text" placeholder="INPUT HOME NAME">
+        <button id="renamebtnhome" onclick="renamehomebtn()">HOME</button>
+    <div class="homechangebtn">  
+        <button onclick="white()"></button>
+        <button onclick="red()"></button>
+        <button onclick="green()"></button>
+        <button onclick="blue()"></button>
+        <button onclick="yellow()"></button>
+        <button onclick="black()"></button>
+    </div> 
+    </div>
+     <div class="renameguest">
+        <input id="inputnameguest-el" type="text" placeholder="INPUT GUEST NAME">
+        <button id="renamebtnguest" onclick="renameguestbtn()">GUEST</button>
+     <div class="homechangebtn">  
+        <button onclick="white1()"></button>
+        <button onclick="red1()"></button>
+        <button onclick="green1()"></button>
+        <button onclick="blue1()"></button>
+        <button onclick="yellow1()"></button>
+        <button onclick="black1()"></button>
+    </div> 
+
+    </div>
+
+
+
+    <script src="score.js"></script>
+</body>
+</html>

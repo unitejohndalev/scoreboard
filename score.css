@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+} 
+
+
+
+/* This for the container */
+.scoreboard-container {
+    border-style: none;
+    display: inline-block; 
+    width: 50%;
+    height: 25rem;
+    position: relative;
+    margin-top: 7%;
+    left: 25%;
+    background-color: rgba(27, 36, 74, 1);
+    display: flex;
+    justify-content: center;
+} 
+.scoreboard-container > button {
+    width: 10vh;
+    position: absolute;
+    left: 44.5%;
+    top: 85%;
+    font-size: 1.2rem;
+    text-align: center;
+}
+button {
+    width: 45px;
+    height: 45px;
+    border:solid 3px #9AABDB;
+    border-radius: 5px;
+    color: #9AABDB;
+    background: rgba(27, 36, 74, 1);
+    margin-left: 5px;
+    cursor: pointer;
+    
+}
+
+.btn-container {
+    border: none;
+    color: yellow;
+    display: inline-block;
+    margin-top: 12%;
+    margin-left: 8%;
+    
+}
+ 
+ /* changing the fonts of scoreboard/button */
+ .scorehome-container > p, button,
+ .scoreguest-container > p, button {
+    font-family: 'Cursed Timer ULiL', sans-serif;
+    
+}
+
+.scorehome-container,
+.scoreguest-container {
+    border: none;
+    display: inline-block;
+    height: 70%;
+    width: 25%;
+    margin-top: 5%;   
+}
+
+.scorehome-container {
+    margin-right: 10%;
+}
+
+.scoreboard-container ul li {
+    border: none;
+    list-style: none;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    margin-left: -27%;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Verdana';
+    color: #EEEEEE;
+    padding: 0;
+
+
+
+    
+}
+
+.scorehome-container p,
+.scoreguest-container p {
+    border: none;
+    /* display: inline-block; */
+    font-size: 5rem;
+    display: flex;
+    justify-content: center;
+    background: #080001;
+    color: rgba(249, 79, 109, 1);
+    margin-top: 10%;
+    border-radius: 5px;
+    padding-top: 10%;
+    
+}
+
+.scorehome-container ul li:nth-child(2) {
+    font-size: 1.5rem;
+    border: none;
+    display: inline-block;
+    width: 150%;
+    text-align: center;
+    margin-left: -40%;
+}
+.scoreguest-container ul li:nth-child(2) {
+    font-size: 1.5rem;
+    border: none;
+    display: inline-block;
+    width: 150%;
+    text-align: center;
+    margin-left: -40%;
+
+}
+.score-home,
+.score-guest {
+    border: none;
+    display: inline-block;
+    margin-left: 9.5%;
+    
+}
+
+
+/* renaming participants name */
+
+.renamehome {
+    border: none;
+    box-shadow: 1px 1px 5px rgba(100, 130, 228, .8) ;
+    display: inline-block;
+    width: 25%;
+    height: 25%;
+    position: absolute;
+    top: 69%;
+    left: 5%;
+
+}
+
+.renamehome input {
+    font-size: 20px;
+    padding: 5%;
+    margin-top: 5%;
+    margin-left: 5%;
+    width: 80%;
+    display: inline-block;
+    box-shadow: 1px 1px 5px #8B5CF6;
+    text-transform: uppercase;
+    border-style: none;
+    outline: transparent;
+}
+::placeholder {
+    color: rgba(18, 55, 221, 0.8);
+}
+
+#renamebtnhome {
+    display: inline-block;
+    position: absolute;
+    width: 5rem;
+    left: 67%;
+    top: 15%;
+    font-size: large;
+}
+
+#change-name {
+    text-transform: uppercase;
+}
+
+/* btn for choosing colors */
+
+.homechangebtn {
+    border: none;
+    text-align: center;
+    margin-top: 5%;
+}
+.homechangebtn>button:nth-child(1) {
+    background: white;
+}
+.homechangebtn > button:nth-child(2) {
+    background: red;
+}
+
+.homechangebtn > button:nth-child(3) {
+    background: green;
+}
+.homechangebtn > button:nth-child(4) {
+    background: blue;
+}
+.homechangebtn > button:nth-child(5) {
+    background: yellow;
+}
+.homechangebtn > button:nth-child(6) {
+    background: black;
+}
+
+
+
+
+/* renaming guest name */
+
+.renameguest {
+    border: none;
+    box-shadow: 1px 1px 5px rgba(100, 130, 228, .8);
+    display: inline-block;
+    width: 25%;
+    height: 25%;
+    position: absolute;
+    top: 69%;
+    right: 5%;
+
+}
+
+.renameguest input {
+    font-size: 20px;
+    padding: 5%;
+    margin-top: 5%;
+    margin-left: 5%;
+    width: 80%;
+    display: inline-block;
+    box-shadow: 1px 1px 5px #8B5CF6;
+    border-style: none;
+    text-transform: uppercase;
+    outline: transparent;
+
+}
+
+::placeholder {
+    color: rgba(18, 55, 221, 0.8);
+}
+
+#renamebtnguest {
+    display: inline-block;
+    position: absolute;
+    width: 5rem;
+    left: 67%;
+    top: 15%;
+    font-size: large;
+}
+
+#changeguest-name {
+    text-transform: uppercase;
+}
