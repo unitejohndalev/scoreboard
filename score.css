@@ -54,6 +54,7 @@ li {
     margin-left: auto;
     position: absolute;
     bottom: 0;
+    gap: 10%;
 
 }
 .resetbtn {
@@ -77,7 +78,7 @@ button {
 
 button {
     width: 30%;
-    height: 45px;
+    height: 35px;
     margin-left: auto;
     margin-right: auto;
     border: solid 3px #9AABDB;
@@ -140,8 +141,8 @@ button {
 .renamehome input {
     font-size: 15px;
     padding: 2%;
-    margin-top: 5%;
-    margin-left: 5%;
+    margin-top: 10%;
+    margin-left: 10%;
     width: 50%;
     display: inline-block;
     box-shadow: 1px 1px 5px #8B5CF6;
@@ -173,7 +174,7 @@ button {
     font-size: 15px;
     padding: 2%;
     margin-top: 5%;
-    margin-left: 5%;
+    margin-left:10%;
     width: 50%;
     display: inline-block;
     box-shadow: 1px 1px 5px #8B5CF6;
@@ -212,7 +213,7 @@ button {
     text-align: center;
     margin-bottom: 10px;
     margin-top: 10px;
-    margin-left: 10%;
+    margin-left: 20%;
    
     
 }
@@ -241,3 +242,78 @@ button {
     background: black;
 }
 
+/* making a responsive layout for desktop */
+
+ @media screen and (min-width: 600px) {
+
+   .scoreboard-container {
+    border-radius: 20px;
+
+
+   }
+
+   .pcontainer p {
+    display: flex;
+    background-color: black;
+    padding: 15%;
+    border-radius: 10%;
+    position: relative;
+
+
+   }
+
+   .pcontainer {
+    background-color: rgba(27, 36, 74, 1); 
+    padding: 0;
+    position: relative;
+    width: 50%;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+ 
+   }
+
+   .btn-container {
+
+    display: flex;
+    bottom: -25px;
+    gap: 10px;
+   }
+
+   .btn-container > button {
+    width: 100px;
+    height: 50px;
+   }
+
+   ul {
+       position: relative;
+       top: 2%;
+
+   }
+
+   ul li:nth-child(1) {
+       font-size: 3rem;
+       margin-top: 0;
+   }
+
+   ul li:nth-child(2) {
+       font-size: 1.3rem;
+
+   }
+    @media screen and (min-width: 750px) and (max-width:1000px){
+        .resetbtn {
+            width: 11%;
+            height: 19%;
+            border-radius: 50%;
+            cursor: pointer;
+            bottom: -8.5%;
+            margin-left: 5%;
+            font-size: 1rem;
+        }
+}
+ 
+
+
+
+
+} 
