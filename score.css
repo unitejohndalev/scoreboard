@@ -1,3 +1,5 @@
+
+
 * {
     margin: 0;
     padding: 0;
@@ -68,7 +70,8 @@ button,
 .scoreguest-container>p,
 button {
     font-family: 'Cursed Timer ULiL', sans-serif;
-    src: url('http: //fonts.cdnfonts.com/css/cursed-timer-ulil');
+    src: local('Cursed Timer ULiL'),
+    url('https://fonts.cdnfonts.com/s/40642/CursedTimerUlil-Aznm.woff') format('woff');
 
 }
 
